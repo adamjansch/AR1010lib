@@ -5,7 +5,7 @@ The AR1010 FM Receiver Breakout Board is a miniature FM radio receiver whose par
 
 This library uses the I2C serial protocol, accessed through the Arduino's analog in pins 4 & 5. It allows for custom initialisation, and the setting of tuning frequency, volume, hardmute and softmute values. Although the library probably isn't feature complete it shouldn't be difficult to add in higher-level methods using the available programming guide* and some of the lower-level methods available in the library.
 
-*The programming guide for the Airoha AR1000 (version 0.81, RevF) is also suitable for the AR1010, and contains accurate register maps of the module's functionality.
+*The programming guide for the [Airoha AR1000 (version 0.81, RevF)](http://rtr.ca/fmradio/ar1000F_progguide-0.81.pdf) is also suitable for the AR1010, and contains accurate register maps of the module's functionality.
 
 
 INSTALLATION
