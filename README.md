@@ -3,7 +3,7 @@ AR1010lib
 
 The AR1010 FM Receiver Breakout Board is a miniature FM radio receiver whose parameters can be controlled over an I2C (two-wire) or an SPI (three-wire) serial interface, thus making it ideal for connection to an Arduino.
 
-This library uses the I2C serial protocol, accessed through the Arduino's analog in pins 4 & 5. It allows for custom initialisation, and the setting of tuning frequency, volume, hardmute and softmute values. Although the library probably isn't feature complete it shouldn't be difficult to add in higher-level functions using the available programming guide* and some of the lower-level functions available in the library.
+This library uses the I2C serial protocol, accessed through the Arduino's analog in pins 4 & 5. It allows for custom initialisation, and the setting of tuning frequency, volume, hardmute and softmute values. Although the library probably isn't feature complete it shouldn't be difficult to add in higher-level methods using the available programming guide* and some of the lower-level methods available in the library.
 
 *The programming guide for the Airoha AR1000 (version 0.81, RevF) is also suitable for the AR1010, and contains accurate register maps of the module's functionality.
 
@@ -29,7 +29,7 @@ USAGE
 * Define an AR1010 instance: `AR1010 radio = AR1010();`
 * Optionally define an array to set the AR1010's registers. This should be of type `word` and 18 elements large. Refer to the programming guide for the configurations of the registers
 
-### Setup() function
+### Setup() method
 
 * Begin I2C comms with the Wire library: `Wire.begin();`
 * Initialise the AR1010 instance: `radio.initialise();` - optionally pass register array as argument here
@@ -37,5 +37,12 @@ USAGE
 
 ### The rest
 
-Access library functions through the AR1010 instance; for example, to set the radio frequency use `radio.setFrequency(910);` to set it to 91.0MHz.
+Access library methods through the AR1010 instance; for example, to set the radio frequency use `radio.setFrequency(910);` to set it to 91.0MHz. Methods available are:
 
+* `seek([char direction])`: seek (autotune) to next station - pass `u` to seek up and `d` to seek down
+* `frequency()`: get current radio frequency - measured in tenths of MHz, so 934 equates to 93.4MHz
+* `setFrequency([int frequency])`: set radio FM frequency directly - measured in tenths of MHz, so 934 equates to 93.4MHz
+* `setHardmute([bool mute_on])`: set radio hard mute
+* `setSoftmute([bool mute_on])`: set radio soft mute
+* `setSeekThreshold([int threshold])`: set seek (autotune) threshold, or the point at which the radio will decide a given frequency is a station
+* `setVolume([int volume])`: set radio volume, at integer between 0-18
