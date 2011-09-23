@@ -1,0 +1,29 @@
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+AR1010	KEYWORD1
+ar1010lib	KEYWORD1
+ar1010lib.h	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+writeToRegister	KEYWORD2
+readFromRegister	KEYWORD2
+
+initialise	KEYWORD2
+
+setSeekDirection	KEYWORD2
+setSeekThreshold	KEYWORD2
+
+setFrequency	KEYWORD2
+setVolume	KEYWORD2
+setHardmute	KEYWORD2
+setSoftmute	KEYWORD2
+
+frequency	KEYWORD2
+seek	KEYWORD2
+buildSeekMap	KEYWORD2
