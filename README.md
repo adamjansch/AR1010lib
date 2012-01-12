@@ -1,7 +1,7 @@
 AR1010lib
 =========
 
-The AR1010 FM Receiver Breakout Board is a miniature FM radio receiver whose parameters can be controlled over an I<sup>2</sup>C ('two-wire') or an SPI ('three-wire') serial interface, thus making it ideal for connection to an Arduino.
+The [AR1010 FM Receiver Breakout Board](http://www.sparkfun.com/products/8972) is a miniature FM radio receiver whose parameters can be controlled over an I<sup>2</sup>C ('two-wire') or an SPI ('three-wire') serial interface, thus making it ideal for connection to an Arduino.
 
 The **AR1010lib** library uses the I<sup>2</sup>C serial protocol, accessed through the Arduino's analog in pins 4 & 5. It allows for custom initialisation, and the setting of tuning frequency, volume, hardmute and softmute values. Although the library probably isn't feature complete it shouldn't be difficult to add in higher-level methods using the available programming guide* and some of the lower-level methods available in the library.
 
