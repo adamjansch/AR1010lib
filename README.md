@@ -8,7 +8,6 @@ This library uses the I2C serial protocol, accessed through the Arduino's analog
 *The programming guide for the [Airoha AR1000 (version 0.81, RevF)](http://rtr.ca/fmradio/ar1000F_progguide-0.81.pdf) is also suitable for the AR1010, and contains accurate register maps of the module's functionality.
 
 
-<div id="extra-info">
 INSTALLATION
 ------------
 
@@ -47,4 +46,3 @@ Access library methods through the AR1010 instance; for example, to set the radi
 * `setSoftmute([bool mute_on])`: set radio soft mute
 * `setSeekThreshold([int threshold])`: set seek (autotune) threshold, or the point at which the radio will decide a given frequency is a station
 * `setVolume([int volume])`: set radio volume, at integer between 0-18
-</div>
