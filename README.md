@@ -7,7 +7,7 @@ The **AR1010lib** library uses the I<sup>2</sup>C serial protocol, accessed thro
 
 *The programming guide for the [Airoha AR1000 (version 0.81, RevF)](http://rtr.ca/fmradio/ar1000F_progguide-0.81.pdf) is also suitable for the AR1010, and contains accurate register maps of the module's functionality.
 
-<span id="intro-end"></span>
+<div id="intro-end"></div>
 
 INSTALLATION
 ------------
