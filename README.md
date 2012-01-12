@@ -11,9 +11,9 @@ This library uses the I2C serial protocol, accessed through the Arduino's analog
 INSTALLATION
 ------------
 
-* Install the AR1010lib library, following the instructions in the Contributed Libraries section on the [Arduino Libraries](http://www.arduino.cc/en/Reference/Libraries) page
-* Make sure to add `#include <ar1010lib.h>` to the beginning of any necessary Sketchbook file
-* Add the Arduino's Wire library here too
+1. Install the AR1010lib library, following the instructions in the Contributed Libraries section on the [Arduino Libraries](http://www.arduino.cc/en/Reference/Libraries) page
+2. Make sure to add `#include <ar1010lib.h>` to the beginning of any necessary Sketchbook file
+3. Add the Arduino's Wire library here too
 
 
 USAGE
@@ -21,19 +21,19 @@ USAGE
 
 ### Hardware
 
-* Connect AR1010 Data To to Arduino Analog in 4
-* Connect AR1010 Clock to Arduino Analog in 5 
+1. Connect AR1010 Data To to Arduino Analog in 4
+2. Connect AR1010 Clock to Arduino Analog in 5 
 
 ### Global
 
-* Define an AR1010 instance: `AR1010 radio = AR1010();`
-* Optionally define an array to set the AR1010's registers. This should be of type `word` and 18 elements large. Refer to the programming guide for the configurations of the registers
+1. Define an AR1010 instance: `AR1010 radio = AR1010();`
+2. Optionally define an array to set the AR1010's registers. This should be of type `word` and 18 elements large. Refer to the programming guide for the configurations of the registers
 
 ### Setup() method
 
-* Begin I2C comms with the Wire library: `Wire.begin();`
-* Initialise the AR1010 instance: `radio.initialise();` - optionally pass register array as argument here
-* Add a second delay: `delay(1000);`
+1. Begin I2C comms with the Wire library: `Wire.begin();`
+2. Initialise the AR1010 instance: `radio.initialise();` - optionally pass register array as argument here
+3. Add a one-second delay: `delay(1000);`
 
 ### The rest
 
