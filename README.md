@@ -3,7 +3,7 @@ AR1010lib
 
 The AR1010 FM Receiver Breakout Board is a miniature FM radio receiver whose parameters can be controlled over an I2C (two-wire) or an SPI (three-wire) serial interface, thus making it ideal for connection to an Arduino.
 
-This library uses the I2C serial protocol, accessed through the Arduino's analog in pins 4 & 5. It allows for custom initialisation, and the setting of tuning frequency, volume, hardmute and softmute values. Although the library probably isn't feature complete it shouldn't be difficult to add in higher-level methods using the available programming guide* and some of the lower-level methods available in the library.
+This library uses the I<sup>2</sup>C serial protocol, accessed through the Arduino's analog in pins 4 & 5. It allows for custom initialisation, and the setting of tuning frequency, volume, hardmute and softmute values. Although the library probably isn't feature complete it shouldn't be difficult to add in higher-level methods using the available programming guide* and some of the lower-level methods available in the library.
 
 *The programming guide for the [Airoha AR1000 (version 0.81, RevF)](http://rtr.ca/fmradio/ar1000F_progguide-0.81.pdf) is also suitable for the AR1010, and contains accurate register maps of the module's functionality.
 
@@ -31,7 +31,7 @@ USAGE
 
 ### Setup() method
 
-1. Begin I2C comms with the Wire library: `Wire.begin();`
+1. Begin I<sup>2</sup>C comms with the Wire library: `Wire.begin();`
 2. Initialise the AR1010 instance: `radio.initialise();` - optionally pass register array as argument here
 3. Add a one-second delay: `delay(1000);`
 
