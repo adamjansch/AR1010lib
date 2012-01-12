@@ -12,7 +12,7 @@ The **AR1010lib** library uses the I<sup>2</sup>C serial protocol, accessed thro
 INSTALLATION
 ------------
 
-1. Install the AR1010lib library, following the instructions in the Contributed Libraries section on the [Arduino Libraries](http://www.arduino.cc/en/Reference/Libraries) page
+1. Install the AR1010lib library, following the instructions in the Contributed Libraries section on the <a href="http://www.arduino.cc/en/Reference/Libraries" title="Arduino Libraries" target="_blank">Arduino Libraries</a> page
 2. Make sure to add `#include <ar1010lib.h>` to the beginning of any necessary Sketchbook file
 3. Add the Arduino's Wire library here too
 
