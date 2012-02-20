@@ -3,11 +3,13 @@ AR1010lib
 
 The <a href="http://www.sparkfun.com/products/8972" title="AR1010 FM Receiver Breakout Board" target="_blank">AR1010 FM Receiver Breakout Board</a> is a miniature FM radio receiver whose parameters can be controlled over an I<sup>2</sup>C ('two-wire') or an SPI ('three-wire') serial interface, thus making it ideal for connection to an Arduino.
 
-The **AR1010lib** library uses the I<sup>2</sup>C serial protocol, accessed through the Arduino's analog in pins 4 & 5. It allows for custom initialisation, and the setting of tuning frequency, volume, hardmute and softmute values. Although the library probably isn't feature complete it shouldn't be difficult to add in higher-level methods using the available programming guide* and some of the lower-level methods available in the library.
-
-*The programming guide for the <a href="http://rtr.ca/fmradio/ar1000F_progguide-0.81.pdf" title="Airoha AR1000 Guide, v0.81 Rev F" target="_blank">Airoha AR1000 (version 0.81, RevF)</a> is also suitable for the AR1010, and contains accurate register maps of the module's functionality.
+The **AR1010lib** library uses the I<sup>2</sup>C serial protocol, accessed through the Arduino's analog in pins 4 & 5. It allows for custom initialisation, and the setting of tuning frequency, volume, hardmute and softmute values. Although the library probably isn't feature complete, it shouldn't be difficult to add in higher-level methods using the available programming guide and some of the lower-level methods available in the library.
 
 <div id="intro-end"></div>
+
+(The programming guide for the <a href="http://rtr.ca/fmradio/ar1000F_progguide-0.81.pdf" title="Airoha AR1000 Guide, v0.81 Rev F" target="_blank">Airoha AR1000 (version 0.81, RevF)</a> is also suitable for the AR1010, and contains accurate register maps of the module's functionality.)
+
+
 
 INSTALLATION
 ------------
